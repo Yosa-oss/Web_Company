@@ -189,16 +189,6 @@ img{
     transform:rotate(8deg)
 }
 
-.hero-bottom{
-    position:absolute;
-    bottom:40px;left:4vw;
-    right:4vw;
-    display:flex;
-    justify-content:space-between;
-    font-size:.6rem;
-    letter-spacing:.15em
-}
-
 .statement,.services,.process,.team{
     padding:150px 4vw
 }
@@ -262,14 +252,16 @@ img{
 
 .image-caption{
     position:absolute;
-    bottom:35px;
+    bottom:25px;
     left:4vw;
-    color:white;
     font-size:.65rem;
     letter-spacing:.18em;
-    font-weight:700
+    font-weight:700;
+    color: white;
+    @media screen and (max-width: 768px){
+        color: #080f16;
+    }
 }
-
 .services{
     background:#e7e4db
 }
@@ -327,73 +319,6 @@ img{
 .service:hover{
     padding-left:18px;
     background:rgba(255,255,255,.3)
-}
-
-.dark-feature{
-    background:var(--dark);
-    color:var(--white);
-    min-height:90vh;
-    padding:100px 4vw;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:7vw;
-    align-items:center
-}
-
-.dark-copy h2{
-    font:800 clamp(4rem,8vw,8rem)/.88 Manrope;
-    letter-spacing:-.08em;
-    margin:35px 0
-}
-
-.dark-copy h2 em{
-    font-family:Georgia,serif;
-    font-weight:400
-}
-
-.dark-copy>p:not(.eyebrow){
-    max-width:520px;
-    line-height:1.7;
-    color:#c3c7c3
-}
-
-.project-meta{
-    display:grid;
-    grid-template-columns:130px 1fr;
-    gap:13px;
-    margin-top:50px;
-    border-top:1px solid rgba(255,255,255,.2);
-    padding-top:20px;
-    font-size:.67rem;
-    letter-spacing:.12em
-}
-
-.project-meta strong{
-    font-weight:500
-}
-
-.project-image{
-    height:550px;
-    position:relative;
-    background:#102236;
-    display:grid;
-    place-items:center;
-    overflow:hidden
-}
-
-.project-image img{
-    width:60%;
-    height:auto;
-    object-fit:contain
-}
-
-.project-image span{
-    position:absolute;
-    bottom:20px;
-    left:20px;
-    font-size:.6rem;
-    letter-spacing:.15em;
-    color:#c3c7c3
 }
 
 .process-top{
